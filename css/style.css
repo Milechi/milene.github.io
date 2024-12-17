@@ -1,0 +1,858 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(92, 80, 75);
+    padding: 10px 20px;
+    position: fixed;
+    width: 100%;
+    margin: auto;
+}
+
+.logo {
+    color: white;
+    font-size: 24px;
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+}
+
+.nav-list li {
+    margin: 0 15px;
+}
+
+.nav-list a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.nav-list a:hover {
+    color: #ff6347; /* Color al pasar el mouse */
+}
+/* Estilos para el menú móvil */
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.bar {
+    height: 3px;
+    width: 25px;
+    background-color: white;
+    margin: 3px 0;
+}
+
+#inicio{
+    width: 100%;
+    height: 400px;
+    background-color: beige;
+    margin: auto;
+}
+
+.fondo-textil{
+    width: 100%;
+    margin: auto;
+    margin-top: -75px;
+}
+
+.nombre{
+    font-size: 1.2em;
+    color: rgb(49, 49, 49);
+    position: absolute;
+    margin-top: -360px;
+    margin-left: 730px;
+}
+
+.t-d-t{
+    font-size: 1.5em;
+    color: rgb(49, 49, 49);
+    position: absolute;
+    margin-top: -330px;
+    margin-left: 690px;
+}
+
+
+
+#sobre-mi{
+    width: 100%;
+    height: 850px;
+    background-color: rgb(255, 255, 255);
+}
+.texto-sobre-mi{
+    font-size: 2em;
+    color: rgb(92, 80, 75);
+    margin-top: 260px;
+    margin-left: 50px;
+    position: absolute;
+}
+
+.caja-parrafo{
+    width: 38%;
+    height: 155px;
+    float: left;
+    margin-top: 300px;
+    margin-left: 500px;
+}
+.parrafo-1{
+    text-align: center;
+    color: rgb(92, 80, 75);
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.3em;
+}
+
+.contenedor{
+    width: 95%;
+    height: 290px;
+    float: left;
+    margin-top: 30px;
+    margin-left: 40px;
+}
+.caja-1{
+    width: 31.5%;
+    height: 250px;
+    background-color: white;
+    float: left;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+.primera-imagen{
+    width: 100%;
+}
+.segunda-imagen{
+    width: 100%;
+}
+.tercera-imagen{
+    width: 100%;
+}
+
+
+
+
+#metas{
+    width: 100%;
+    height: 550px;
+    background-color: rgb(255, 189, 189);
+    margin: auto;
+}
+.texto-metas{
+    font-size: 2em;
+    font-family: Arial;
+    float: left;
+    margin-top: 50px;
+    margin-left: 50px;
+    color: rgb(92, 80, 75);
+}
+
+.cajon-imagenes{
+    width: 55%;
+    height: 350px;
+    float: left;
+    margin-top: 90px;
+    margin-left: -100px;
+}
+.cajon-img{
+    width: 31%;
+    height: 310px;
+    background-color: white;
+    float: left;
+    margin-top: 20px;
+    margin-left: 15px;
+}
+.img-metas{
+    width: 100%;
+}
+
+.caja-texto-metas{
+    width: 35%;
+    height: 270px;
+    float: right;
+    margin-right: 80px;
+    margin-top: 150px;
+}
+.texto{
+    font-size: 1.3em;
+    color: rgb(92, 80, 75);
+    font-family: 'Times New Roman', Times, serif;
+}
+
+
+
+
+#contacto{
+    width: 100%;
+    height: 300px;
+    background-color: white;
+}
+.texto-contacto{
+    font-size: 2em;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(92, 80, 75);
+    margin-top: 40px;
+    margin-left: 50px;
+}
+.servicios{
+    font-size: 1.5em;
+    color: rgb(92, 80, 75);
+    float: left;
+    font-family: 'Times New Roman', Times, serif;
+    margin-top: 20px;
+    margin-left: 490px;
+    text-align: center;
+}
+
+.email{
+    font-size: 1.5em;
+    color: rgb(92, 80, 75);
+    float: left;
+    font-family: Arial;
+    margin-top: 80px;
+    margin-left: 200px;
+}
+.telefono{
+    font-size: 1.5em;
+    color: rgb(92, 80, 75);
+    float: right;
+    font-family: Arial;
+    margin-top: 80px;
+    margin-right: 200px;
+}
+
+
+
+footer{
+    width: 100%;
+    height: 80px;
+    background-color: rgb(92, 80, 75);
+}
+.derechos-reservados{
+    font-size: 1.5em;
+    color: #fff;
+    float: left;
+    padding: 25px 368px;
+}
+
+
+
+
+
+
+
+@media (max-width: 800px){
+    #inicio{
+        width: 112%;
+        height: 390px;
+        margin: auto;
+    }
+    
+    .fondo-textil{
+        width: 100%;
+        margin: auto;
+        margin-top: 48px;
+    }
+    
+    .nombre{
+        font-size: 1.2em;
+        color: rgb(49, 49, 49);
+        position: absolute;
+        margin-top: -260px;
+        margin-left: 350px;
+    }
+    
+    .t-d-t{
+        font-size: 1.5em;
+        color: rgb(49, 49, 49);
+        position: absolute;
+        margin-top: -230px;
+        margin-left: 320px;
+    }
+    
+    
+    
+    #sobre-mi{
+        width: 112%;
+        height: 800px;
+        background-color: rgb(255, 255, 255);
+    }
+    .texto-sobre-mi{
+        font-size: 2em;
+        color: rgb(92, 80, 75);
+        margin-top: 60px;
+        margin-left: 50px;
+        position: absolute;
+    }
+    
+    .caja-parrafo{
+        width: 38%;
+        height: 155px;
+        float: left;
+        margin-top: 130px;
+        margin-left: 290px;
+    }
+    .parrafo-1{
+        text-align: center;
+        color: rgb(92, 80, 75);
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 1.3em;
+    }
+    
+    .contenedor{
+        width: 95%;
+        height: 350px;
+        float: left;
+        margin-top: 100px;
+        margin-left: 20px; 
+        text-align: center;
+    }
+    .caja-1{
+        width: 31.5%;
+        height: 150px;
+        float: left;
+        margin-top: 20px;
+        margin-left: 100px;
+    }
+    .primera-imagen{
+        width: 100%;
+    }
+    .segunda-imagen{
+        width: 100%;
+    }
+    .tercera-imagen{
+        width: 100%;
+        margin-left: 180px;
+    }
+    
+    
+    
+    
+    #metas{
+        width: 112%;
+        height: 590px;
+        background-color: rgb(255, 189, 189);
+        margin: auto;
+    }
+    .texto-metas{
+        font-size: em;
+        font-family: Arial;
+        float: left;
+        margin-top: 20px;
+        margin-left: 50px;
+        color: rgb(92, 80, 75);
+    }
+    
+    .cajon-imagenes{
+        width: 55%;
+        height: 350px;
+        float: left;
+        margin-top: 70px;
+        margin-left: -100px;
+    }
+    .cajon-img{
+        width: 31%;
+        height: 220px;
+        background-color: white;
+        float: left;
+        margin-top: 20px;
+        margin-left: 15px;
+    }
+    .img-metas{
+        width: 100%;
+    }
+    
+    .caja-texto-metas{
+        width: 35%;
+        height: 270px;
+        float: right;
+        margin-right: 70px;
+        margin-top: -340px;
+    }
+    .texto{
+        font-size: 1.2em;
+        color: rgb(92, 80, 75);
+        font-family: 'Times New Roman', Times, serif;
+    }
+    
+    
+    
+    
+    #contacto{
+        width: 112%;
+        height: 300px;
+        background-color: white;
+    }
+    .texto-contacto{
+        font-size: 2em;
+        font-family: Arial, Helvetica, sans-serif;
+        color: rgb(92, 80, 75);
+        margin-top: 40px;
+        margin-left: 50px;
+    }
+    .servicios{
+        font-size: 1em;
+        color: rgb(92, 80, 75);
+        float: left;
+        font-family: 'Times New Roman', Times, serif;
+        margin-top: 20px;
+        margin-left: 240px;
+        text-align: center;
+    }
+    
+    .email{
+        font-size: 1em;
+        color: rgb(92, 80, 75);
+        float: left;
+        font-family: Arial;
+        margin-top: 80px;
+        margin-left: 70px;
+    }
+    .telefono{
+        font-size: 1em;
+        color: rgb(92, 80, 75);
+        float: right;
+        font-family: Arial;
+        margin-top: 80px;
+        margin-right: 70px;
+    }
+    
+    
+    
+    footer{
+        width: 112%;
+        height: 50px;
+        background-color: rgb(92, 80, 75);
+    }
+    .derechos-reservados{
+        font-size: 1em;
+        color: #fff;
+        float: left;
+        padding: 16px 140px;
+    }
+}
+
+
+
+
+
+
+@media (max-width: 400px){
+    #inicio{
+        width: 112%;
+        height: 390px;
+        margin: auto;
+    }
+    
+    .fondo-textil{
+        width: 100%;
+        margin: auto;
+        margin-top: 48px;
+    }
+    
+    .nombre{
+        font-size: 1.2em;
+        color: rgb(49, 49, 49);
+        position: absolute;
+        margin-top: -260px;
+        margin-left: 350px;
+    }
+    
+    .t-d-t{
+        font-size: 1.5em;
+        color: rgb(49, 49, 49);
+        position: absolute;
+        margin-top: -230px;
+        margin-left: 320px;
+    }
+    
+    
+    
+    #sobre-mi{
+        width: 112%;
+        height: 800px;
+        background-color: rgb(255, 255, 255);
+    }
+    .texto-sobre-mi{
+        font-size: 2em;
+        color: rgb(92, 80, 75);
+        margin-top: 60px;
+        margin-left: 50px;
+        position: absolute;
+    }
+    
+    .caja-parrafo{
+        width: 38%;
+        height: 155px;
+        float: left;
+        margin-top: 130px;
+        margin-left: 290px;
+    }
+    .parrafo-1{
+        text-align: center;
+        color: rgb(92, 80, 75);
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 1.3em;
+    }
+    
+    .contenedor{
+        width: 95%;
+        height: 350px;
+        float: left;
+        margin-top: 100px;
+        margin-left: 20px; 
+        text-align: center;
+    }
+    .caja-1{
+        width: 31.5%;
+        height: 150px;
+        float: left;
+        margin-top: 20px;
+        margin-left: 100px;
+    }
+    .primera-imagen{
+        width: 100%;
+    }
+    .segunda-imagen{
+        width: 100%;
+    }
+    .tercera-imagen{
+        width: 100%;
+        margin-left: 180px;
+    }
+    
+    
+    
+    
+    #metas{
+        width: 112%;
+        height: 590px;
+        background-color: rgb(255, 189, 189);
+        margin: auto;
+    }
+    .texto-metas{
+        font-size: em;
+        font-family: Arial;
+        float: left;
+        margin-top: 20px;
+        margin-left: 50px;
+        color: rgb(92, 80, 75);
+    }
+    
+    .cajon-imagenes{
+        width: 55%;
+        height: 350px;
+        float: left;
+        margin-top: 70px;
+        margin-left: -100px;
+    }
+    .cajon-img{
+        width: 31%;
+        height: 220px;
+        background-color: white;
+        float: left;
+        margin-top: 20px;
+        margin-left: 15px;
+    }
+    .img-metas{
+        width: 100%;
+    }
+    
+    .caja-texto-metas{
+        width: 35%;
+        height: 270px;
+        float: right;
+        margin-right: 70px;
+        margin-top: -340px;
+    }
+    .texto{
+        font-size: 1.2em;
+        color: rgb(92, 80, 75);
+        font-family: 'Times New Roman', Times, serif;
+    }
+    
+    
+    
+    
+    #contacto{
+        width: 112%;
+        height: 300px;
+        background-color: blue;
+    }
+    .texto-contacto{
+        font-size: 2em;
+        font-family: Arial, Helvetica, sans-serif;
+        color: rgb(92, 80, 75);
+        margin-top: 40px;
+        margin-left: 50px;
+    }
+    .servicios{
+        font-size: 1em;
+        color: rgb(92, 80, 75);
+        float: left;
+        font-family: 'Times New Roman', Times, serif;
+        margin-top: 20px;
+        margin-left: 240px;
+        text-align: center;
+    }
+    
+    .email{
+        font-size: 1em;
+        color: rgb(92, 80, 75);
+        float: left;
+        font-family: Arial;
+        margin-top: 80px;
+        margin-left: 70px;
+    }
+    .telefono{
+        font-size: 1em;
+        color: rgb(92, 80, 75);
+        float: right;
+        font-family: Arial;
+        margin-top: 80px;
+        margin-right: 70px;
+    }
+    
+    
+    
+    footer{
+        width: 112%;
+        height: 50px;
+        background-color: rgb(92, 80, 75);
+    }
+    .derechos-reservados{
+        font-size: 1em;
+        color: white;
+        float: left;
+        padding: 16px 140px;
+    }
+}
+
+
+
+
+
+
+
+@media (max-width: 768px) {
+    .nav-list {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 47px;
+        left: 0;
+        background-color: #333;
+        height: 100vh;
+    }
+
+    .nav-list li{
+        text-align: center;
+        padding: 20px 10px;
+        margin-top: 0px;
+    }
+    
+    li:hover{
+        background-color: #8a8a8a;
+        color: #333;
+        padding: 20px 10px;
+    }
+
+    .nav-list.active {
+        display: flex;
+    }
+
+    .menu-toggle {
+        display: flex;
+    }
+
+
+
+    #inicio{
+        width: 114%;
+        height: 384px;
+        margin: auto;
+    }
+    
+    .fondo-textil{
+        width: 100%;
+        margin: auto;
+        margin-top: 49px;
+    }
+    
+    .nombre{
+        font-size: 1.2em;
+        color: rgb(49, 49, 49);
+        position: absolute;
+        margin-top: -240px;
+        margin-left: 380px;
+    }
+    
+    .t-d-t{
+        font-size: 1.5em;
+        color: rgb(49, 49, 49);
+        position: absolute;
+        margin-top: -200px;
+        margin-left: 350px;
+    }
+    
+    
+    
+    #sobre-mi{
+        width: 114%;
+        height: 600px;
+        background-color: #fff;
+    }
+    .texto-sobre-mi{
+        font-size: 2em;
+        color: rgb(92, 80, 75);
+        margin-top: 80px;
+        margin-left: 30px;
+        position: absolute;
+    }
+    
+    .caja-parrafo{
+        width: 50%;
+        height: 170px;
+        float: left;
+        margin-top: 150px;
+        margin-left: 230px;
+    }
+    .parrafo-1{
+        text-align: center;
+        color: rgb(92, 80, 75);
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 1.3em;
+        line-height: 1.4;
+    }
+    
+    .contenedor{
+        width: 100%;
+        height: 290px;
+        float: left;
+        margin-top: 50px;
+        margin-left: 0px;
+    }
+    .caja-1{
+        width: 31.5%;
+        height: 50px;
+        float: left;
+        margin-top: 20px;
+        margin-left: 13px;
+    }
+    
+    
+    
+    
+    #metas{
+        width: 114%;
+        height: 870px;
+        background-color: rgb(255, 189, 189);
+        margin: auto;
+    }
+    .texto-metas{
+        font-size: 2em;
+        font-family: Arial;
+        float: left;
+        margin-top: -30px;
+        margin-left: 30px;
+        color: rgb(92, 80, 75);
+    }
+    
+    .cajon-imagenes{
+        width: 58%;
+        height: 760px;
+        float: left;
+        margin-top: 0px;
+        margin-left: -121px;
+    }
+    .cajon-img{
+        width: 47%;
+        height: 310px;
+        float: left;
+        margin-top: 60px;
+        margin-left: 10px;
+    }
+    
+    .caja-texto-metas{
+        width: 35%;
+        height: 270px;
+        float: right;
+        margin-right: 30px;
+        margin-top: 50px;
+    }
+    .texto{
+        font-size: 1.3em;
+        color: rgb(92, 80, 75);
+        font-family: 'Times New Roman', Times, serif;
+        line-height: 1.5;
+    }
+    
+    
+    
+    
+    #contacto{
+        width: 114%;
+        height: 350px;
+        background-color: #fff;
+    }
+    .texto-contacto{
+        font-size: 2em;
+        font-family: Arial, Helvetica, sans-serif;
+        color: rgb(92, 80, 75);
+        margin-top: 40px;
+        margin-left: 50px;
+    }
+    .servicios{
+        font-size: 1.5em;
+        color: rgb(92, 80, 75);
+        float: left;
+        font-family: 'Times New Roman', Times, serif;
+        margin-top: 30px;
+        margin-left: 145px;
+        text-align: center;
+    }
+    
+    .email{
+        font-size: 1.5em;
+        color: rgb(92, 80, 75);
+        float: left;
+        font-family: Arial;
+        margin-top: 90px;
+        margin-left: 200px;
+    }
+    .telefono{
+        font-size: 1.5em;
+        color: rgb(92, 80, 75);
+        float: right;
+        font-family: Arial;
+        margin-top: 20px;
+        margin-right: 270px;
+    }
+    
+    
+    
+    footer{
+        width: 114%;
+        height: 81px;
+        background-color: rgb(92, 80, 75);
+    }
+    .derechos-reservados{
+        font-size: 1.4em;
+        color: #fff;
+        float: left;
+        padding: 28px 35px;
+    }
+}
